@@ -8,7 +8,7 @@ namespace PuckPro.Models
     public class Countries
     {
         [Column("id")][Key] public int Id { get; set; }
-        [Column("city_name")] public string? Name { get; set; }
+        [Column("name")] public string? Name { get; set; }
 
         public virtual ICollection<Cities> Cities { get; set; } = new List<Cities>();
         public virtual ICollection<Players> Players { get; set; } = new List<Players>();

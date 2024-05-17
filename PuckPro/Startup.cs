@@ -19,6 +19,7 @@ public class Startup
             opt.UseNpgsql(connection));
 
         services.AddEndpointsApiExplorer();
+        services.AddControllers();
         services.AddSwaggerGen();
     }
 
